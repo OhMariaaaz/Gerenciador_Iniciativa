@@ -39,4 +39,6 @@ while confirm is True:
 print('====================================================')
 print('Iniciativas inseridas. Vamos começar o combate!')
 
-ordena_iniciativa.ordena(nomes, iniciativas)
+dicionario_ordenado = ordena_iniciativa.ordena(nomes, iniciativas)
+contador = ['_' for item in dicionario_ordenado.items()]
+ordena_iniciativa.imprimi_na_tela(dicionario_ordenado, contador)
