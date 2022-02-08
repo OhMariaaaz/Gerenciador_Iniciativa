@@ -1,3 +1,5 @@
+import ordena_iniciativa
+
 confirm = True
 nomes = []
 iniciativas = []
@@ -32,4 +34,5 @@ while confirm is True:
 
 print('====================================================')
 print('Iniciativas inseridas. Vamos começar o combate!')
-print(nomes, iniciativas)
+
+ordena_iniciativa.ordena(nomes, iniciativas)
