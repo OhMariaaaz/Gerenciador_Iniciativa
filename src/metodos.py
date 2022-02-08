@@ -16,16 +16,14 @@ def ordena(nome, iniciativa):
 def imprimi_na_tela(dicionario, contador):
     count = 0
     turno = 0
-    rodada = 0
+    rodada = 1
     condicao = True
     while condicao is True:
         print('RODADA {}'.format(rodada))
-
         for item in dicionario.items():
             if turno == len(dicionario.values()):
                 turno = 0
                 rodada += 1
-            # elif turno == (len(dicionario.values())):
             contador[turno] = '>'
             print(contador[count], item[1], '-', item[0])
             contador[turno] = '_'
