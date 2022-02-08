@@ -11,7 +11,8 @@ def ordena(nome, iniciativa):
     for i in range(len(nome)):
         dici.update({nome[i]: iniciativa[i]})
 
-    # Ordenando os valores do dicionário, em outro dicionário, do maior para o menor.
+    # Ordenando os valores do dicionário, em outro dicionário, do maior para o 
+    # menor.
     dicionario_ordenado = dict(sorted(dici.items(),
                                key=operator.itemgetter(1), reverse=True))
 
@@ -41,13 +42,9 @@ def imprimi_na_tela(dicionario, contador):
         turno += 1
 
         print('')
-        proximo = input('Proximo Turno: (1) Sim | (2) Não: ')
+        msg = 'Proximo Turno:'
+        condicao = confirma(msg)
         os.system('clear')
-
-        if proximo == '1':
-            pass
-        else:
-            condicao = False
 
 
 # Função de confirmação de mensagem.
@@ -59,7 +56,7 @@ def confirma(msg):
     while resposta != "1" and resposta != "2":
 
         # Recebe a resposta e padroniza ela(caixa alta).
-        resposta = input('(1) Sim | (2) Não')
+        resposta = input('(1) Sim | (2) Não: ')
 
         # Verifica qual foi a resposta do usuário e retorna o resultado.
         # Caso a resposta não seja nem 1 e nem 2, o usuário deve digitar a
