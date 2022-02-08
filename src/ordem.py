@@ -18,7 +18,7 @@ while confirm is True:
     i = i + 1
 
     # Recebendo o nome e a iniciativa do personagem.
-    print('  PERSONAGEM ', i, ':')
+    print('PERSONAGEM ', i, ':')
     nome = input('DIGITE O NOME DO PERSONAGEM: ')
     iniciativa = input('DIGITE A INICIATIVA DO PERSONAGEM: ')
 
