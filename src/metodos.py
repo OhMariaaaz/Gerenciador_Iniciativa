@@ -19,29 +19,24 @@ def ordena(nome, iniciativa):
     return dicionario_ordenado
 
 
-'
-ção A fun
-'''
+# Contador de rodadas do combate.
 def imprimi_na_tela(dicionario, contador):
     count = 0
     turno = 0
-    rodada = 1
+    rodada = 0
     condicao = True
     while condicao is True:
         print('RODADA {}'.format(rodada))
+
         for item in dicionario.items():
             if turno == len(dicionario.values()):
                 turno = 0
                 rodada += 1
-<<<<<<< HEAD
-
-=======
->>>>>>> 52a8612a5ac87712dd2fe223b593f4294ce3e692
+            # elif turno == (len(dicionario.values())):
             contador[turno] = '>'
             print(contador[count], item[1], '-', item[0])
             contador[turno] = '_'
             count += 1
-
         count = 0
         turno += 1
 
