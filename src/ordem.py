@@ -1,42 +1,39 @@
 import ordena_iniciativa
+import confirma_pergunta
 import os
 
 confirm = True
 nomes = []
 iniciativas = []
+i = 0
+
+
 os.system('clear')
+print('\tGERENCIADOR DE INICIATIVA')
 print('====================================================')
-print('Seja bem vindo ao gerenciador de iniciativa! Vamos começar:')
-i = 1
+
 
 # Recebendo os nomes e as iniciativas de cada personagem.
 # Para cada repetição, um novo personagem é adicionado.
 while confirm is True:
+    i = i + 1
+
     # Recebendo o nome e a iniciativa do personagem.
-    print('\tPersonagem ', i, ':')
-    nome = input('Digite o nome do personagem: ')
-    iniciativa = input('Digite a iniciativa do personagem: ')
+    print('  PERSONAGEM ', i, ':')
+    nome = input('DIGITE O NOME DO PERSONAGEM: ')
+    iniciativa = input('DIGITE A INICIATIVA DO PERSONAGEM: ')
 
     # Adicionando nome e iniciativa nas listas.
     nomes.append(nome.title())
     iniciativas.append(str(iniciativa).rjust(2, '0'))
 
+    # Criando uma nova repetição caso o usuário deseje.
     print('====================================================')
-
-    # Criando uma nova repetição no While caso o usuário deseje.
-    print('Personagem adicionado na lista!')
-    resposta = input('Deseja adicionar mais algum? ')
-    resposta = resposta.upper()
-    if resposta == "SIM" or resposta == "S":
-        confirm = True
-    elif resposta == "YES" or resposta == "Y":
-        confirm = True
-    else:
-        confirm = False
-    i = i + 1
+    msg = 'PERSONAGEM ADICIONADO! DESEJA ADICIONAR MAIS ALGUM?'
+    confirm = confirma_pergunta.confirma(msg)
     os.system('clear')
 
 print('====================================================')
-print('Iniciativas inseridas. Vamos começar o combate!')
+print('\tORDEM DE INICIATIVA')
 
 ordena_iniciativa.ordena(nomes, iniciativas)
