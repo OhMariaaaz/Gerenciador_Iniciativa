@@ -1,5 +1,4 @@
-import ordena_iniciativa
-import confirma_pergunta
+import metodos
 import os
 
 confirm = True
@@ -30,12 +29,12 @@ while confirm is True:
     # Criando uma nova repetição caso o usuário deseje.
     print('====================================================')
     msg = 'PERSONAGEM ADICIONADO! DESEJA ADICIONAR MAIS ALGUM?'
-    confirm = confirma_pergunta.confirma(msg)
+    confirm = metodos.confirma(msg)
     os.system('clear')
 
 print('====================================================')
 print('\tORDEM DE INICIATIVA')
 
-dicionario_ordenado = ordena_iniciativa.ordena(nomes, iniciativas)
+dicionario_ordenado = metodos.ordena(nomes, iniciativas)
 contador = ['_' for item in dicionario_ordenado.items()]
-ordena_iniciativa.imprimi_na_tela(dicionario_ordenado, contador)
+metodos.imprimi_na_tela(dicionario_ordenado, contador)
