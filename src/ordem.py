@@ -1,8 +1,11 @@
 import ordena_iniciativa
+import os
 
 confirm = True
 nomes = []
 iniciativas = []
+os.system('clear')
+print('====================================================')
 print('Seja bem vindo ao gerenciador de iniciativa! Vamos começar:')
 i = 1
 
@@ -15,14 +18,14 @@ while confirm is True:
     iniciativa = input('Digite a iniciativa do personagem: ')
 
     # Adicionando nome e iniciativa nas listas.
-    nomes.append(nome)
-    iniciativas.append(int(iniciativa))
+    nomes.append(nome.title())
+    iniciativas.append(str(iniciativa).rjust(2, '0'))
 
     print('====================================================')
 
     # Criando uma nova repetição no While caso o usuário deseje.
     print('Personagem adicionado na lista!')
-    resposta = input('Deseja adicionar mais algum?')
+    resposta = input('Deseja adicionar mais algum? ')
     resposta = resposta.upper()
     if resposta == "SIM" or resposta == "S":
         confirm = True
@@ -31,6 +34,7 @@ while confirm is True:
     else:
         confirm = False
     i = i + 1
+    os.system('clear')
 
 print('====================================================')
 print('Iniciativas inseridas. Vamos começar o combate!')
