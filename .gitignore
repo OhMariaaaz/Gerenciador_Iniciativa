@@ -1,3 +1,11 @@
-
+.mypy_cache
 src/__pycache__
 venv/lib/python3.8/site-packages/__pycache__
+venv/lib/python3.8/site-packages/flake8/__pycache__
+venv/lib/python3.8/site-packages/mypy/__pycache__
+venv/lib/python3.8/site-packages/tomli/__pycache__
+venv/lib/python3.8/site-packages/pyflakes/__pycache__
+venv/lib/python3.8/site-packages/flake8/formatting/__pycache__
+venv/lib/python3.8/site-packages/flake8/main/__pycache__
+venv/lib/python3.8/site-packages/flake8/plugins/__pycache__
+venv/lib/python3.8/site-packages/flake8/options/__pycache__
