@@ -11,7 +11,7 @@ def ordena(nome, iniciativa):
     for i in range(len(nome)):
         dici.update({nome[i]: iniciativa[i]})
 
-    # Ordenando os valores do dicionário, em outro dicionário, do maior para o 
+    # Ordenando os valores do dicionário, em outro dicionário, do maior para o
     # menor.
     dicionario_ordenado = dict(sorted(dici.items(),
                                key=operator.itemgetter(1), reverse=True))
