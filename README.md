@@ -28,7 +28,7 @@ Está seção visa relatar um pouco de como foi o processo de desenvolvimento de
 > Começamos leve para acompanhar o pouco que sei sobre a linguagem, mas já temos muitas idéias para melhorar esse projeto incrível! Ansiosa para ver o resultado final dessa coisa maravilhosa.
 
 ### [JulioGoes](https://twitter.com/JullioGoes, 'Twiiter')
-> Creio que o primeiro projeto tende a ser um dos mais difíceis para qualquer aspirante a desenvolvedor. Mesmo sendo algo bem simples, a falta de conhecimento e as vezes as dúvidas que surgem durante o processo de desenvolvimento podem ser frustantes. Ainda assim, é necessário ter foco e disciplina se quisermos de fato concluí nossos objetivos.
+> Creio que o primeiro projeto tende a ser um dos mais difíceis para qualquer aspirante a desenvolvedor. Mesmo sendo algo bem simples, a falta de conhecimento e as vezes as dúvidas que surgem durante o processo de desenvolvimento podem ser frustantes. Ainda assim, é necessário ter foco e disciplina se quisermos de fato concluir nossos objetivos.
 >
 > Quando estávamos pensando em qual projeto iríamos realizar primeiro, já sabíamos que seria algo fora do habital para pessoas do nosso perfil de conhecimento (jogo da velha, calculadora e etc), queríamos algo que fosse sim simples, mas útil para nós de alguma forma. O Gerenciador de Iniciativa é exatamente isso, algo simples, útil e que pode vir a ser algo bem maior no futuro.
 >
