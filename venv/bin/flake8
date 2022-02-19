@@ -1,4 +1,4 @@
-#!/home/eduarda/Documentos/GitHub/Ordem_Iniciativa/venv/bin/python
+#!/home/eduarda/Documentos/GitHub/Gerenciador_Iniciativa/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

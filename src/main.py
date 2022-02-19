@@ -7,7 +7,7 @@ iniciativas = []
 i = 0
 
 
-os.system('clear')
+# os.system('clear')
 print('\tGERENCIADOR DE INICIATIVA')
 print('====================================================')
 
